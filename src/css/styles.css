@@ -1,0 +1,185 @@
+/* Font */
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../assets/fonts/Montserrat/Montserrat-SemiBold.eot") format("embedded-opentype"),
+    url("../assets/fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"),
+    url("../assets/fonts/Montserrat/Montserrat-SemiBold.woff2") format("woff2");
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../assets/fonts/Montserrat/Montserrat-Regular.eot") format("embedded-opentype"),
+    url("../assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"),
+    url("../assets/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2");
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../assets/fonts/Montserrat/Montserrat-Light.eot") format("embedded-opentype"),
+    url("../assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff"),
+    url("../assets/fonts/Montserrat/Montserrat-Light.woff2") format("woff2");
+    font-weight: 400;
+}
+
+/* The input wrapper */
+.my-wrapper {
+    position: relative;
+    display: inline-block;
+    
+    width: 100%;
+}
+
+/* Container for all results */
+.my-result-container {
+    overflow-y: auto;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+    transition: visibility 0.1s, opacity 0.1s;
+}
+
+/* The styles change to make results visible */
+.my-results-container--visible {
+    visibility: visible;
+    display: block;
+    opacity: 1;
+    z-index: 2000;
+
+    margin-top: 3px;
+
+    background-color: #ffffff;
+    border-radius: 3px 3px 0 0;
+
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Result box style */
+.my-result {
+    display: flex;
+    background-color: #ffffff;
+    height: 46px;
+    max-height: 46px;
+    overflow: hidden;
+    line-height: 46px;
+    font-size: 12px;
+    font-family: 'Montserrat', Calibri, "Roboto Thin", "Times New Roman";
+    cursor: pointer;
+}
+
+/* Hover effect for result box */
+.my-result-hover {
+    background-color: #efefef;
+}
+
+/* The container of the result icon */
+.my-result-icon-container {
+    display: flex;
+}
+
+/* The style of the svg icon */
+.my-result-icon {
+    width: 15px;
+    margin-right: .23rem;
+    margin-left: 1rem;
+    filter: invert(83%) sepia(1%) saturate(0%) hue-rotate(147deg) brightness(100%) contrast(93%);
+}
+
+/* Special style for point svg */
+.my-result-icon-point {
+    width: 13px;
+    margin-right: .23rem;
+    margin-left: 1rem;
+    filter: invert(83%) sepia(1%) saturate(0%) hue-rotate(147deg) brightness(100%) contrast(93%);
+}
+
+/* Hover effect for icons */
+.my-result-icon-container > .my-result-icon-hover {
+    filter: invert(70%) sepia(7%) saturate(13%) hue-rotate(338deg) brightness(97%) contrast(92%);
+    -webkit-transform: scale(1.1) translateX(1px);
+    transform: scale(1.1) translateX(1px);
+
+    margin-left: .99rem;
+}
+
+/* The style of address part of the result */
+.my-result-address {
+    font-size: 14px;
+    margin: auto 0.5rem;
+    min-width: fit-content;
+    min-width: -moz-max-content;    /* Firefox/Gecko */
+    min-width: -webkit-max-content;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #000;
+}
+
+/* The style of region part of the result */
+.my-result-region {
+    font-size: 12px;
+    margin-left: 12px;
+    color: #919191;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space: nowrap; /* don't break the line */
+}
+
+/* The end bar of the result container */
+.my-results-container-end {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    border-radius: 0 0 3px 3px;
+    padding: 0 1em 0 0;
+    font-size: 12px;
+    line-height: 12px;
+    background-color: inherit;
+    color: black;
+}
+
+/* The style of text of the bottom bar */
+.my-results-container-end-text {
+    margin: auto 0 auto 0;
+
+    font-size: inherit;
+    color: #333a3e;
+}
+
+/* The size of the company logo */
+.my-results-container-end-img {
+    width: 60px;
+}
+
+/* Ths style for addNewAddress btn */
+.my-result-container-end-btn {
+    cursor: pointer;
+    color: #000529;
+    opacity: 0.8;
+    border-bottom: 1px solid #000529;
+    margin: auto 0 auto 1rem;
+    font-weight: 500;
+    font-size: inherit;
+}
+
+/* Hover effect for the addNewAddress btn */
+.my-result-container-end-btn:hover {
+    opacity: 1;
+}
+
+/* The company logo layout styles */
+.my-result-container-end-company-link {
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+/* Hover effect for company logo */
+.my-result-container-end-company-link:hover {
+    opacity: 1;
+}
+

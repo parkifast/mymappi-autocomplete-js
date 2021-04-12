@@ -1,0 +1,13 @@
+.DS_Store
+
+.idea
+node_modules
+index.html
+__mocks__
+test
+
+README.md
+postcss.config.js
+webpack.dev.js
+webpack.prod.js
+/.babelrc
