@@ -31,13 +31,13 @@ The purpose of this library is to implement our autocomplete functionality on yo
 
 To use the mymappiSDK all you need is an `<input>`, and some javascript code to load the package library.
 
-Our js library is available on the [npm](https://npm.com).
+Our js library is available on the [npm](https://www.npmjs.com/package/mymappi-sdk).
 
 **This is the small example of using it:**
 
 install the package by npm command:
 ```
-npm install mymappi-sdk --save
+npm i mymappi-sdk
 ```
 
 And implement it in your project in one of the ways listed below:
