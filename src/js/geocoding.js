@@ -27,7 +27,7 @@ export class Geocoding {
     }
 
     prepareUrl() {
-        this.url = 'https://dev-api.mymappi.com/v2/geocoding/direct';
+        this.url = 'https://api.mymappi.com/v2/geocoding/direct';
     
         // Add apiKey
         this.url += `?apikey=${this.options.apiKey}`;

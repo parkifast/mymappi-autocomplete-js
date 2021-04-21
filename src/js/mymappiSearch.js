@@ -65,8 +65,8 @@ import logo from "../assets/icons/mymappi_logo.png";
 export class MymappiSearch {
 
     // Variables
-    urlAutocomplete = 'https://dev-api.mymappi.com/v2/places/autocomplete';
-    urlDetails = 'https://dev-api.mymappi.com/v2/geocoding/direct';
+    urlAutocomplete = 'https://api.mymappi.com/v2/places/autocomplete';
+    urlDetails = 'https://api.mymappi.com/v2/geocoding/direct';
     urlLastSearch = '';
     resultsArray = [];
     resultHtmlElementsArray = [];

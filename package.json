@@ -1,6 +1,6 @@
 {
   "name": "mymappi-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Autocomplete search",
   "repository": "git://github.com/parkifast/mymappi-autocomplete-js.git",
   "main": "dist/mymappiSDK.js",

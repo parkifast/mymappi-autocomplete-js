@@ -156,7 +156,7 @@ These options can only be set during the instantiation of the autocomplete appli
 
 ### `initAutocomplete`
 
-`initAutocomplete(options)` - This method will initialise the class of mymappiSdk on the given input element. The parameter of this method is an object which include [options parameters](#static-options).
+`initAutocomplete(options)` - This method will return the promise with the instance of the class of mymappiSdk on the given input element. The parameter of this method is an object which include [options parameters](#static-options).
 
 Example of implementation:
 

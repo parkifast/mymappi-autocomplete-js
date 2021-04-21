@@ -70,7 +70,7 @@ describe('prepareUrl', () => {
             maxResults: 4
         }
 
-        const expectedUrl = 'https://dev-api.mymappi.com/v2/geocoding/direct?apikey=KEY&country_code=es&layers=street&lang=en&limit=4&postal_code=123&source_lat=2&source_lon=3&q=';
+        const expectedUrl = 'https://api.mymappi.com/v2/geocoding/direct?apikey=KEY&country_code=es&layers=street&lang=en&limit=4&postal_code=123&source_lat=2&source_lon=3&q=';
 
         const instance = new Geocoding(parameters);
 
@@ -83,7 +83,7 @@ describe('prepareUrl', () => {
                 apiKey: 'KEY'
             }
 
-            const expectedUrl = 'https://dev-api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=10&q=';
+            const expectedUrl = 'https://api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=10&q=';
 
             const instance = new Geocoding(parameters);
 
@@ -95,7 +95,7 @@ describe('prepareUrl', () => {
                 apiKey: 'KEY',
                 country: 'gb'
             }
-            const expectedUrl = 'https://dev-api.mymappi.com/v2/geocoding/direct?apikey=KEY&country_code=gb&lang=en&limit=10&q=';
+            const expectedUrl = 'https://api.mymappi.com/v2/geocoding/direct?apikey=KEY&country_code=gb&lang=en&limit=10&q=';
 
             const instance = new Geocoding(parameters);
 
@@ -107,7 +107,7 @@ describe('prepareUrl', () => {
                 apiKey: 'KEY',
                 country: 'gb,pl,es'
             }
-            const expectedUrl = 'https://dev-api.mymappi.com/v2/geocoding/direct?apikey=KEY&country_code=gb,pl,es&lang=en&limit=10&q=';
+            const expectedUrl = 'https://api.mymappi.com/v2/geocoding/direct?apikey=KEY&country_code=gb,pl,es&lang=en&limit=10&q=';
 
             const instance = new Geocoding(parameters);
 
@@ -168,7 +168,7 @@ describe('prepareUrl', () => {
                 apiKey: 'KEY'
             }
 
-            const expectedUrl = 'https://dev-api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=10&q=';
+            const expectedUrl = 'https://api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=10&q=';
 
             const instance = new Geocoding(parameters);
 
@@ -181,7 +181,7 @@ describe('prepareUrl', () => {
                 layers: 'street'
             }
 
-            const expectedUrl = 'https://dev-api.mymappi.com/v2/geocoding/direct?apikey=KEY&layers=street&lang=en&limit=10&q=';
+            const expectedUrl = 'https://api.mymappi.com/v2/geocoding/direct?apikey=KEY&layers=street&lang=en&limit=10&q=';
 
             const instance = new Geocoding(parameters);
 
@@ -195,7 +195,7 @@ describe('prepareUrl', () => {
                 apiKey: 'KEY',
             }
 
-            const expectedUrl = 'https://dev-api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=10&q=';
+            const expectedUrl = 'https://api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=10&q=';
 
             const instance = new Geocoding(parameters);
 
@@ -208,7 +208,7 @@ describe('prepareUrl', () => {
                 lang: 'fr'
             }
 
-            const expectedUrl = 'https://dev-api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=fr&limit=10&q=';
+            const expectedUrl = 'https://api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=fr&limit=10&q=';
 
             const instance = new Geocoding(parameters);
 
@@ -222,7 +222,7 @@ describe('prepareUrl', () => {
                 apiKey: 'KEY'
             }
 
-            const expectedUrl = 'https://dev-api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=10&q=';
+            const expectedUrl = 'https://api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=10&q=';
 
             const instance = new Geocoding(parameters);
 
@@ -235,7 +235,7 @@ describe('prepareUrl', () => {
                 maxResults: 4
             }
 
-            const expectedUrl = 'https://dev-api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=4&q=';
+            const expectedUrl = 'https://api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=4&q=';
 
             const instance = new Geocoding(parameters);
 
@@ -249,7 +249,7 @@ describe('prepareUrl', () => {
                 apiKey: 'KEY'
             }
 
-            const expectedUrl = 'https://dev-api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=10&q=';
+            const expectedUrl = 'https://api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=10&q=';
 
             const instance = new Geocoding(parameters);
 
@@ -262,7 +262,7 @@ describe('prepareUrl', () => {
                 postalCode: '123'
             }
 
-            const expectedUrl = 'https://dev-api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=10&postal_code=123&q=';
+            const expectedUrl = 'https://api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=10&postal_code=123&q=';
 
             const instance = new Geocoding(parameters);
 
@@ -277,7 +277,7 @@ describe('prepareUrl', () => {
                 sourceLat: 2
             }
 
-            const expectedUrl = 'https://dev-api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=10&source_lat=2&q=';
+            const expectedUrl = 'https://api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=10&source_lat=2&q=';
 
             const instance = new Geocoding(parameters);
 
@@ -290,7 +290,7 @@ describe('prepareUrl', () => {
                 sourceLon: 3
             }
 
-            const expectedUrl = 'https://dev-api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=10&source_lon=3&q=';
+            const expectedUrl = 'https://api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=10&source_lon=3&q=';
 
             const instance = new Geocoding(parameters);
 
@@ -460,7 +460,7 @@ describe('search', () => {
     test('should call fetch method with a given url', async () => {
         mockSuccessfullRequest();
 
-        const expectedUrl = 'https://dev-api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=10&q=sdf';
+        const expectedUrl = 'https://api.mymappi.com/v2/geocoding/direct?apikey=KEY&lang=en&limit=10&q=sdf';
 
         await geocodingInstance.search('sdf');
 
