@@ -50,6 +50,35 @@ describe("initAutocomplete", () => {
         await expect(initAutocomplete(parameters)).resolves.toEqual(MymappiSearch.mock.instances[0]);
     });
 
+    test('should set delay time to 150, when searchDelay is set to smaller number than 150', async() => {
+        const parameters = {
+            apiKey: 'KEY',
+            input: 'input',
+            searchDelay: 140
+        };
+
+        const expectedParameters = {
+            apiKey: 'KEY',
+            input: 'input',
+            postalCodeFilter: undefined,
+            autofocus: true,
+            focusCoordinates: undefined,
+            maxResults: 5,
+            searchDelay: 150,
+            countries: undefined,
+            layers: "address,street,venue",
+            lang: undefined,
+            missingAddressBtn: undefined
+        };
+
+        returnInit = true;
+
+        expect.assertions(1);
+
+        await initAutocomplete(parameters);
+        expect(check.checkInit.mock.calls[0][0]).toEqual(expectedParameters);
+    });
+
     test('should throw an error (origParamsInitUndefined) when called without parameters', async() => {
         expect.assertions(1);
         await expect(() => initAutocomplete()).toThrow(errors.origParamsInitUndefined);
@@ -74,7 +103,7 @@ describe("initAutocomplete", () => {
             autofocus: true,
             focusCoordinates: undefined,
             maxResults: 5,
-            searchDelay: 0,
+            searchDelay: 150,
             countries: undefined,
             layers: "address,street,venue",
             lang: undefined,

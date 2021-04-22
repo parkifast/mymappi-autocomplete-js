@@ -11,7 +11,7 @@ const defaultValuesAutocomplete = {
     autofocus: true,
     focusCoordinates: undefined,
     maxResults: 5,
-    searchDelay: 0,
+    searchDelay: 150,
     countries: undefined,
     layers: "address,street,venue",
     lang: undefined,
@@ -59,6 +59,9 @@ function initAutocomplete(origParams) {
     // assign empty parameters with default values
     const options = Object.assign(defaultValuesAutocomplete, origParams);
 
+    // set the default min delay time
+    if (options.searchDelay < 150) {options.searchDelay = 150;}
+    
     if(checkInit(options)) {
         const autocomplete = new MymappiSearch(options);
         return autocomplete.initialize();
